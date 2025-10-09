@@ -1,0 +1,49 @@
+@font-face {
+    font-family: love;
+    src: url(./PainterPersonalUseOnly-Br0w.ttf);
+}
+@font-face {
+    font-family: nothing;
+    src: url(./Ndot-55.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#aww{
+    color: brown;
+    background-color: aquamarine;
+    font-weight: 1000;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: love; */
+    font-family: nothing;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+#par{
+    color: rgb(10, 10, 40);
+    background-color: rgb(239, 138, 138);
+    font-size: 20px;
+    font-weight: 300;
+}
+#name{
+    color: blueviolet;
+}
+h2{
+    color: brown;
+}
+.col{
+    background-color: rgb(194, 119, 20);
+    color: rgb(83, 2, 2);
+}
+div{
+    background-color: rgb(97, 94, 94);
+    color: rgb(101, 7, 7);
+    text-align: center;
+}
