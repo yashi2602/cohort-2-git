@@ -1,49 +1,121 @@
 @font-face {
-    font-family: love;
-    src: url(./PainterPersonalUseOnly-Br0w.ttf);
-}
-@font-face {
-    font-family: nothing;
-    src: url(./Ndot-55.otf);
+    font-family: google font;
+    src: url(./Montserrat-VariableFont_wght.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: google font;
 }
 html, body{
     height: 100%;
     width: 100%;
 }
-#aww{
-    color: brown;
-    background-color: aquamarine;
-    font-weight: 1000;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    /* font-family: love; */
-    font-family: nothing;
-    font-style: italic;
+#header{
+    background-color: rgb(0, 0, 14);
+    color: white;
     text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+#header h3{
+    font-size: 20px;
+    padding-top:10px;
+    font-weight: 100;
+    font-style: italic;
+}
+#aboutme{
+    background-color: rgb(251, 205, 190);
+    color: black;
+    text-align: center;
+    margin: 30px 180px;
+    padding: 50px;
+}
+#aboutme h2{
+    font-size: 30px;
     text-transform: uppercase;
 }
-#par{
-    color: rgb(10, 10, 40);
-    background-color: rgb(239, 138, 138);
-    font-size: 20px;
-    font-weight: 300;
+#aboutme p{
+    padding-top: 15px;
 }
-#name{
-    color: blueviolet;
-}
-h2{
-    color: brown;
-}
-.col{
-    background-color: rgb(194, 119, 20);
-    color: rgb(83, 2, 2);
-}
-div{
-    background-color: rgb(97, 94, 94);
-    color: rgb(101, 7, 7);
+#education{
+    background-color: rgb(167, 217, 244);
+    color: black;
     text-align: center;
+    margin: 30px 180px;
+    padding: 50px;
+}
+#education h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+.ed{
+    background-color: aliceblue;
+    margin: 8px 90px;
+    padding: 10px 2px;
+}
+#skills{
+    background-color: rgb(249, 229, 162);
+    color: black;
+    text-align: center;
+    margin: 30px 180px;
+    padding: 50px;
+}
+.skl{
+    background-color: aliceblue;
+    margin: 8px 110px;
+    padding: 10px 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#skills h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+#projects{
+    background-color: rgb(244, 179, 250);
+    color: black;
+    text-align: center;
+    margin: 30px 180px;
+    padding: 50px;
+}
+.pro{
+    background-color: aliceblue;
+    margin: 8px 110px;
+    padding: 10px 2px;
+}
+#projects h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+#contact{
+    background-color: rgb(161, 245, 186);
+    color: black;
+    text-align: center;
+    margin: 30px 180px;
+    padding: 50px;
+}
+.con{
+    background-color: aliceblue;
+    margin: 8px 110px;
+    padding: 10px 2px;
+}
+#contact h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+#footer{
+    background-color: rgb(0, 0, 14);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#footer h3{
+    font-weight: 50;
+    text-transform: uppercase;
 }
