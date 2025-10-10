@@ -1,42 +1,41 @@
 @font-face {
     font-family: google font;
-    src: url(./Montserrat-VariableFont_wght.ttf);
+    src: url(./PainterPersonalUseOnly-Br0w.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: google font; */
 }
 html, body{
     height: 100%;
     width: 100%;
 }
-#box1{
-    height: 200px;
-    width: 200px;
-    background: linear-gradient(to right,red,green);  /*linear gradient*/
-    border-radius: 4px;
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1759327718838-0f46cf2e4bc6?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
-#box2{
-    height: 200px;
-    width: 200px;
-    background: radial-gradient(yellow,orange,red);   /*radial gradient*/
-    border-radius: 50%;
+#main h1{
+    color: white;
+    padding: 40px;
+    font-size: 80px;
+    font-family: google font;
+    font-weight: 200;
 }
-#box3{
-    height: 200px;
-    width: 200px;
-    background: conic-gradient(purple,green,red,lightseagreen,salmon,yellow,purple);
-    border: 4px solid red;
+button{
+    text-align: center;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 2px 20px;
+    border-radius: 16px;
+    background-color: rgb(242, 176, 176);
 }
-#box4{
-    height: 200px;
-    width: 200px;
-    background-color: rgb(255, 255, 173);
-    margin: 5px;
-    border: 2px solid black;
-}
-#box4 h3{
-    padding: 30px;
+button:hover{
+    background-color: rgb(210, 174, 244);
+    color: blue;
 }
