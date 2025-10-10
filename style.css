@@ -6,116 +6,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: google font;
+    /* font-family: google font; */
 }
 html, body{
     height: 100%;
     width: 100%;
 }
-#header{
-    background-color: rgb(0, 0, 14);
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    padding: 40px;
+#box1{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right,red,green);  /*linear gradient*/
+    border-radius: 4px;
 }
-#header h3{
-    font-size: 20px;
-    padding-top:10px;
-    font-weight: 100;
-    font-style: italic;
+#box2{
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(yellow,orange,red);   /*radial gradient*/
+    border-radius: 50%;
 }
-#aboutme{
-    background-color: rgb(251, 205, 190);
-    color: black;
-    text-align: center;
-    margin: 30px 180px;
-    padding: 50px;
+#box3{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(purple,green,red,lightseagreen,salmon,yellow,purple);
+    border: 4px solid red;
 }
-#aboutme h2{
-    font-size: 30px;
-    text-transform: uppercase;
+#box4{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 173);
+    margin: 5px;
+    border: 2px solid black;
 }
-#aboutme p{
-    padding-top: 15px;
-}
-#education{
-    background-color: rgb(167, 217, 244);
-    color: black;
-    text-align: center;
-    margin: 30px 180px;
-    padding: 50px;
-}
-#education h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-}
-.ed{
-    background-color: aliceblue;
-    margin: 8px 90px;
-    padding: 10px 2px;
-}
-#skills{
-    background-color: rgb(249, 229, 162);
-    color: black;
-    text-align: center;
-    margin: 30px 180px;
-    padding: 50px;
-}
-.skl{
-    background-color: aliceblue;
-    margin: 8px 110px;
-    padding: 10px 2px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-#skills h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-}
-#projects{
-    background-color: rgb(244, 179, 250);
-    color: black;
-    text-align: center;
-    margin: 30px 180px;
-    padding: 50px;
-}
-.pro{
-    background-color: aliceblue;
-    margin: 8px 110px;
-    padding: 10px 2px;
-}
-#projects h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-}
-#contact{
-    background-color: rgb(161, 245, 186);
-    color: black;
-    text-align: center;
-    margin: 30px 180px;
-    padding: 50px;
-}
-.con{
-    background-color: aliceblue;
-    margin: 8px 110px;
-    padding: 10px 2px;
-}
-#contact h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-}
-#footer{
-    background-color: rgb(0, 0, 14);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-#footer h3{
-    font-weight: 50;
-    text-transform: uppercase;
+#box4 h3{
+    padding: 30px;
 }
