@@ -16,77 +16,30 @@ html, body{
     height: 100%;
     width: 100%;
 }
-#main{
+#parent{
+    display: flex;
+    align-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    color: white;
     background-color: black;
 }
-#nav{
-    padding: 30px 70px;
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
 }
-#nav a{
-    color: white;
-    text-decoration: none;
-    margin-right: 30px;
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: salmon;
 }
-#main>h1{
-    font-size: 250px;
-    font-weight: 400;
-    padding-left: 50px;
-}
-#btmleft{
-    padding-left: 70px;
-    position: absolute;
-    bottom: 25%;
-    width: 300px;
-}
-#btmleft h3{
-    font-size: 25px;
-}
-#btmleft p{
-    font-size: 15px;
-    margin-top: 5px;
-}
-#btmleft h4{
-    font-size: 20px;
-    margin-top: 15px;
-}
-#btmbar{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 70px;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-}
-#btmbar h1{
-    font-size:30px;
-    font-family: pp;
-}
-#btmbar a{
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-#main>img{
-    height: 300px;
-    position: absolute;
-}
-#first{
-    top: 45%;
-    left: 50%;
-    width: 250px;
-}
-#second{
-    top: 55%;
-    left: 35%;
-    width: 250px;
-}
-#third{
-    top: 58%;
-    left: 65%;
-    width: 300px;
-    
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
 }
