@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: apple;
+    /* font-family: apple; */
 }
 html, body{
     height: 100%;
@@ -15,55 +15,88 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: white;
-}
-#nav{
-    height: 50px;
-    width: 100%;
-    background-color: rgb(66, 65, 65);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-#nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-}
-#center{
     background-color: black;
-    background-image: url(https://www.apple.com/in/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg);
-    background-size: 80% 70%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    height: 85%;
+}
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    z-index: 11;
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: tan;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    z-index: 10;
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: salmon;
+}
+
+
+#box4{
+   height: 200px;
+    width: 200px;
+    background-color: rgb(162, 114, 250);
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#box5{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(3, 34, 13);
+    position: absolute; 
+    /* transform: translateX(20%); */
+    transform: translateY(20%);
+}
+
+#parent{
+    height: 100%;
     width: 100%;
-    padding: 50px;
-}
-#center h1{
-    font-size: 70px;
-    font-weight: 600;
-}
-#center h5{
-    font-size: 40px;
-    font-weight: 400;
-}
-#links{
+    background-color: rgb(58, 57, 56);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    overflow: auto;
 }
-#links button{
-    background-color: rgb(37, 76, 192);
-    color: white;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 13px 20px;
-    border-radius: 50px;
-    border: none;
+
+#child1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    flex-shrink: 0;
 }
+#child2{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    flex-shrink: 0;
+}
+#child3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    flex-shrink: 0;
+}
+#child4{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    flex-shrink: 0;
+}
+
+
+
