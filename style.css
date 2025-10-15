@@ -1,45 +1,69 @@
 @font-face {
-    font-family: google font;
-    src: url(./Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: pp;
-    src: url(./PainterPersonalUseOnly-Br0w.ttf);
+    font-family: apple;
+    src: url(./sf-pro-text_regular.woff2);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: google font;
+    font-family: apple;
 }
 html, body{
     height: 100%;
     width: 100%;
 }
-#parent{
-    display: flex;
-    align-items: center;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
-    justify-content: space-evenly;
+#main{
     height: 100%;
     width: 100%;
+    background-color: white;
+}
+#nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(66, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+#center{
     background-color: black;
+    background-image: url(https://www.apple.com/in/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg);
+    background-size: 80% 70%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    height: 85%;
+    width: 100%;
+    padding: 50px;
 }
-#box1{
-    height: 200px;
-    width: 200px;
-    background-color: lightgreen;
+#center h1{
+    font-size: 70px;
+    font-weight: 600;
 }
-#box2{
-    height: 200px;
-    width: 200px;
-    background-color: salmon;
+#center h5{
+    font-size: 40px;
+    font-weight: 400;
 }
-#box3{
-    height: 200px;
-    width: 200px;
-    background-color: lightskyblue;
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+#links button{
+    background-color: rgb(37, 76, 192);
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 13px 20px;
+    border-radius: 50px;
+    border: none;
 }
