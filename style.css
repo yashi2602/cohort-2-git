@@ -1,12 +1,12 @@
 @font-face {
     font-family: apple;
-    src: url(./sf-pro-text_regular.woff2);
+    src: url(./Montserrat-VariableFont_wght.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: apple; */
+    font-family: apple;
 }
 html, body{
     height: 100%;
@@ -15,88 +15,55 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: black;
-}
-#box1{
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
-    position: absolute;
-    left: 35%;
-    top: 55%;
-    z-index: 11;
-}
-#box2{
-    height: 200px;
-    width: 200px;
-    background-color: tan;
-    position: absolute;
-    left: 40%;
-    top: 60%;
-    z-index: 10;
-}
-#box3{
-    height: 200px;
-    width: 200px;
-    background-color: salmon;
-}
-
-
-#box4{
-   height: 200px;
-    width: 200px;
-    background-color: rgb(162, 114, 250);
-    position: absolute; 
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-#box5{
-    height: 200px;
-    width: 200px;
-    background-color: rgb(3, 34, 13);
-    position: absolute; 
-    /* transform: translateX(20%); */
-    transform: translateY(20%);
-}
-
-#parent{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(58, 57, 56);
+    background-color: rgb(131, 210, 255);
+    padding: 40px;
     display: flex;
-    align-items: flex-start;
-    /* flex-direction: column; */
-    justify-content: flex-start;
-    /* flex-wrap: wrap; */
-    flex-wrap: nowrap;
-    overflow: auto;
+    gap: 40px;
+    flex-wrap: wrap;
 }
-
-#child1{
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    flex-shrink: 0;
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
 }
-#child2{
-    height: 100px;
-    width: 100px;
-    background-color: green;
-    flex-shrink: 0;
+.card img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
 }
-#child3{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    flex-shrink: 0;
+.card h2{
+    font-size: 24px;
+    font-weight: 600;
 }
-#child4{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    flex-shrink: 0;
+.card p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(78, 77, 77, 0.874);
+    text-align: center;
 }
-
-
-
+.card button{
+    padding: 10px 30px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 40px;
+    border: 2px solid royalblue;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+}
+.card button:hover{
+    background-color: transparent;
+    color: rgb(40, 40, 40);
+    border: 2px solid gray;
+    
+}
