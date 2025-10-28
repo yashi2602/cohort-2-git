@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: apple;
+    /* font-family: apple; */
 }
 html, body{
     height: 100%;
@@ -15,55 +15,28 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: rgb(131, 210, 255);
-    padding: 40px;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+    background-color: black;
 }
-.card{
-    height: 300px;
-    width: 250px;
-    background-color: white;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 3px 3px 20px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px,-200px);
+    /* perspective: 900px; */
 }
-.card img{
-    width: 90px;
-    height: 90px;
+.box:hover{
+    background-color: blue;
+    transition: all ease (5s);
+}
+.box img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    object-position: top;
-    border-radius: 50%;
-}
-.card h2{
-    font-size: 24px;
-    font-weight: 600;
-}
-.card p{
-    font-size: 14px;
-    font-weight: 600;
-    color: rgba(78, 77, 77, 0.874);
-    text-align: center;
-}
-.card button{
-    padding: 10px 30px;
-    background-color: royalblue;
-    color: white;
-    border-radius: 40px;
-    border: 2px solid royalblue;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 5px;
-}
-.card button:hover{
-    background-color: transparent;
-    color: rgb(40, 40, 40);
-    border: 2px solid gray;
-    
+    /* transform: rotateX(60deg); */
+    /* transform: rotateY(60deg); */
+    /* transform: rotateZ(45deg); */
+    transform: scale(2);
 }
