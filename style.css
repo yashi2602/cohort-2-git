@@ -15,56 +15,48 @@ body {
     height: 100%;
     width: 100%;
 }
-
-#main {
+#main{
     height: 100%;
     width: 100%;
-    background-color: #000;
-    padding: 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-wrap: wrap;
+    background-color: #111;
+    padding: 100px;
+}
+#main h1{
+    text-align: center;
+    color: transparent;
+    font-size: 100px;
+    font-weight: 700;
+    background-image: url("https://img.freepik.com/free-vector/background-abstract-design_23-2147936009.jpg?semt=ais_hybrid&w=740&q=80");
+    /* background: linear-gradient(red yellow orange); */
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-stroke: 2px white;
+
+}
+#main h2{
+    text-align: center;
+    color: transparent;
+    font-size: 70px;
+    padding-top: 10px;
+    font-weight: 500;
+    /* background-image: url("https://t4.ftcdn.net/jpg/09/23/97/49/240_F_923974935_4rYV9R4QSqVMZ1diCvhYeW8PjhcEuNeT.jpg"); */
+    background: linear-gradient(to bottom, red, rgb(30, 0, 255));
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-stroke: 2px white;
+
 }
 
-.card {
-    height: 300px;
-    width: 350px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
 
-.card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+/* .box{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    margin: 5px;
 }
-
-.button {
-    height: 40%;
-    width: 100%;
-    background: linear-gradient(transparent, #000);
-    position: absolute;
-    bottom: -40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    transition: all ease (1s);
+.box:nth-child(2n){
+    background-color: blueviolet;
 }
-
-.card:hover .button {
-    bottom: 0;
-}
-
-.button h4 {
-    color: white;
-    font-size: 30px;
-}
-
-.button h3 {
-    color: white;
-    font-size: 35px;
-}
+.box:nth-last-child(2){
+    border: 5px solid green;
+} */
