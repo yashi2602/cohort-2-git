@@ -2,41 +2,69 @@
     font-family: apple;
     src: url(./Montserrat-VariableFont_wght.ttf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: apple; */
+    font-family: apple;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
-#main{
+
+#main {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.box{
-    height: 400px;
-    width: 400px;
-    background-color: brown;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-200px,-200px);
-    /* perspective: 900px; */
+
+.card {
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
-.box:hover{
-    background-color: blue;
-    transition: all ease (5s);
-}
-.box img{
+
+.card img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* transform: rotateX(60deg); */
-    /* transform: rotateY(60deg); */
-    /* transform: rotateZ(45deg); */
-    transform: scale(2);
+}
+
+.button {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, #000);
+    position: absolute;
+    bottom: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    transition: all ease (1s);
+}
+
+.card:hover .button {
+    bottom: 0;
+}
+
+.button h4 {
+    color: white;
+    font-size: 30px;
+}
+
+.button h3 {
+    color: white;
+    font-size: 35px;
 }
