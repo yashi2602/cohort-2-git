@@ -1,6 +1,6 @@
 @font-face {
     font-family: apple;
-    src: url(./Montserrat-VariableFont_wght.ttf);
+    src: url(./sf-pro-text_regular.woff2);
 }
 
 * {
@@ -15,48 +15,84 @@ body {
     height: 100%;
     width: 100%;
 }
-#main{
+main{
     height: 100%;
     width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    /* grid-gap: 10px; */
+    grid-template-areas: "header header header"
+                         "section section section"
+                         "div1 div2 div3";                     
+}
+header{
     background-color: #111;
-    padding: 100px;
+    grid-area: header;
+    }
+header nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* padding-left: 150px; */
+    gap: 50px;
 }
-#main h1{
-    text-align: center;
-    color: transparent;
-    font-size: 100px;
-    font-weight: 700;
-    background-image: url("https://img.freepik.com/free-vector/background-abstract-design_23-2147936009.jpg?semt=ais_hybrid&w=740&q=80");
-    /* background: linear-gradient(red yellow orange); */
-    background-size: cover;
-    background-clip: text;
-    -webkit-text-stroke: 2px white;
-
-}
-#main h2{
-    text-align: center;
-    color: transparent;
-    font-size: 70px;
-    padding-top: 10px;
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
     font-weight: 500;
-    /* background-image: url("https://t4.ftcdn.net/jpg/09/23/97/49/240_F_923974935_4rYV9R4QSqVMZ1diCvhYeW8PjhcEuNeT.jpg"); */
-    background: linear-gradient(to bottom, red, rgb(30, 0, 255));
+}
+section{
+    background-color: rgb(249, 244, 237);
+    grid-area: section ;
+    text-align: center;
+}
+section h1{
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+}
+section p{
+    text-align: center;
+    padding: 6px 120px;
+    font-size: 18px;
+    font-weight: 500;
+}
+section button{
+    margin-top: 15px;
+    padding: 12px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(13, 32, 48);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+section button:hover{
+    background-color: royalblue;
+    color: rgb(109, 4, 4);
+}
+#div1{
+    background-image: url(https://plus.unsplash.com/premium_photo-1664378802354-7ec2fece08c2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhlcmFweSUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600);
     background-size: cover;
-    background-clip: text;
-    -webkit-text-stroke: 2px white;
+    grid-area: div1;
+    border: 5px solid rgb(249, 244, 237);;
+}
+#div2{
+    background-image: url(https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGh5c2ljYWwlMjB0aGVyYXB5fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600);
+    background-size: cover;
+    grid-area: div2;
+    border: 5px solid rgb(249, 244, 237);;
 
 }
-
-
-/* .box{
-    height: 200px;
-    width: 200px;
-    background-color: brown;
-    margin: 5px;
+#div3{
+    background-image: url(https://images.unsplash.com/photo-1540206063137-4a88ca974d1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBoeXNpY2FsJTIwdGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600);
+    background-size: cover;
+    grid-area: div3;
+    border: 5px solid rgb(249, 244, 237);;
 }
-.box:nth-child(2n){
-    background-color: blueviolet;
-}
-.box:nth-last-child(2){
-    border: 5px solid green;
-} */
